@@ -10,15 +10,15 @@ package InheritanceHomeWork;
  * @author Sanuth
  */
 public class HealthProfession extends Job {
-    private String certificate;
+    private String certipicate;
     private String licence;
 
-    public String getCertificate() {
-        return certificate;
+    public String getCertipicate() {
+        return certipicate;
     }
 
-    public void setCertificate(String certificate) {
-        this.certificate = certificate;
+    public void setCertipicate(String certipicate) {
+        this.certipicate = certipicate;
     }
 
     public String getLicence() {
@@ -28,4 +28,9 @@ public class HealthProfession extends Job {
     public void setLicence(String licence) {
         this.licence = licence;
     }
+    
+    
+    
+    
+    
 }

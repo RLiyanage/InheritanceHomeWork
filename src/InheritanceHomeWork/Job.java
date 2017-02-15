@@ -9,20 +9,19 @@ package InheritanceHomeWork;
  *
  * @author Sanuth
  */
-public class Job {
+public  class  Job {
+private String workingPlace ;
+private String education;
+private int workingHours;
+private double pay;
+private String tasks ;
 
-    private String workPlace;
-    private String education;
-    private int workingHours;
-    private double pay;
-    private String tasks;
-
-    public String getWorkPlace() {
-        return workPlace;
+    public String getWorkingPlace() {
+        return workingPlace;
     }
 
-    public void setWorkPlace(String workPlace) {
-        this.workPlace = workPlace;
+    public void setWorkingPlace(String workingPlace) {
+        this.workingPlace = workingPlace;
     }
 
     public String getEducation() {
@@ -56,4 +55,7 @@ public class Job {
     public void setTasks(String tasks) {
         this.tasks = tasks;
     }
+
+   
+    
 }

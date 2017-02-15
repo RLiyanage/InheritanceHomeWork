@@ -9,25 +9,15 @@ package InheritanceHomeWork;
  *
  * @author Sanuth
  */
-public final class Doctor extends HealthProfession {
-    private boolean medicalCollegeAdmissionTest;
-    private boolean residency;
-    private boolean medicalSchool;
-
-    public void setMedicalCollegeAdmissionTest(boolean medicalCollegeAdmissionTest) {
-        this.medicalCollegeAdmissionTest = medicalCollegeAdmissionTest;
-    }
-
-    public void setResidency(boolean residency) {
-        this.residency = residency;
-    }
-
-    public void setMedicalSchool(boolean medicalSchool) {
-        this.medicalSchool = medicalSchool;
-    }
-
-    public Doctor() {
-        super.setEducation("Bachelor Of Science Degree");
+public final class Doctor extends HealthProfession{
+    private final boolean medicalCollegeAdmissionTest = true;
+    private final boolean residency = true;
+    private final boolean medicalSchool = true;
+   
+    
+    
+    public Doctor(String bachelorOfScienceDegree) {
+        setEducation(bachelorOfScienceDegree);
     }
 
     public boolean isMedicalCollegeAdmissionTest() {
@@ -37,17 +27,32 @@ public final class Doctor extends HealthProfession {
     public boolean isResidency() {
         return residency;
     }
-
     public boolean isMedicalSchool() {
         return medicalSchool;
     }
 
-    public void completeRequirments() {
-        System.out.println("Medical college admission test ");
-        setMedicalCollegeAdmissionTest(true);
-        System.out.println("Medical College Completion ");
-        setMedicalSchool(true);
-        System.out.println("Residency Completion");
-        setResidency(true);
+    @Override
+    public void setWorkingPlace(String hospital) {
+        super.setWorkingPlace(hospital); 
     }
+
+    @Override
+    public void setEducation(String bachelorOfScienceDegree) {
+        super.setEducation(bachelorOfScienceDegree); 
+    }
+
+    public void completeRequirments(){
+        isMedicalCollegeAdmissionTest();
+        isMedicalSchool();
+        isResidency();
+         
+    }
+
+    @Override
+    public void setLicence( String boardCertification) {
+        super.setLicence(boardCertification); 
+    }
+    
+    
+    
 }
