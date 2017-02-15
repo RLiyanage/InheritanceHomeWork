@@ -9,7 +9,7 @@ package InheritanceHomeWork;
  *
  * @author Sanuth
  */
-public final class Doctor extends HealthProfession {
+public final class Doctor extends HealthCareProfession {
     private boolean medicalCollegeAdmissionTest;
     private boolean residency;
     private boolean medicalSchool;

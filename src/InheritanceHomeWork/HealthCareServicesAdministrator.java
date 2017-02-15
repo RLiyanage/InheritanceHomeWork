@@ -9,7 +9,7 @@ package InheritanceHomeWork;
  *
  * @author Sanuth
  */
-public class HealthServicesAdministrator extends HealthProfession {
+public class HealthCareServicesAdministrator extends HealthCareProfession {
 
     private boolean adminCertified;
 

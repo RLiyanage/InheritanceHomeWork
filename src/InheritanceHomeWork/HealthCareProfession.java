@@ -9,7 +9,7 @@ package InheritanceHomeWork;
  *
  * @author Sanuth
  */
-public class HealthProfession extends Job {
+public class HealthCareProfession extends Job {
     private String certificate;
     private String licence;
 
